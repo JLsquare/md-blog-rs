@@ -6,6 +6,7 @@ Code for my personal website. Simple, markdown-based.
 
 - Serves markdown content
 - Uses a basic HTML template
+- Background grid shared between everyone for fun
 - My portfolio/blog
 
 ## Run it
