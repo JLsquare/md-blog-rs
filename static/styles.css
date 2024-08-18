@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#gridCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, main, .markdown-content, nav, a, h1, h2, p, ul, ol, li {
+    pointer-events: auto;
+}
+
+header {
+    width: 100%;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #4586a8;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    color: #4586a8;
+    margin-right: 1rem;
+}
+
+main {
+    flex-grow: 1;
+    max-width: 44rem;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem;
+}
+
+img {
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.markdown-content {
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.markdown-content > div {
+    max-width: 72rem;
+    margin: 0 auto;
+}
+
+.markdown-content h1 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #4586a8;
+}
+
+.markdown-content h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #4586a8;
+}
+
+.markdown-content p {
+    margin-bottom: 1rem;
+}
+
+.markdown-content ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding-left: 0;
+}
+
+.markdown-content ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    margin-bottom: 1rem;
+}
+
+.markdown-content ul li,
+.markdown-content ol li {
+    margin-bottom: 0.25rem;
+}
+
+.markdown-content a {
+    color: #4586a8;
+}
+
+.markdown-content a:hover {
+    text-decoration: underline;
+}
+
+.markdown-content hr {
+    border-top: 1px solid #4a4a4a;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.25;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="french cs student, professional yapper">
+    <title>jl²</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="icon" href="static/favicon.ico">
+</head>
+<body>
+    <canvas id="gridCanvas"></canvas>
+    <div class="content-wrapper">
+        <header>
+            <h1>jl²</h1>
+            <nav>
+                <a href="/">home</a>
+                <span class="separator">/</span>
+                <a href="/about">about</a>
+                <span class="separator">/</span>
+                <a href="/projects">projects</a>
+                <span class="separator">/</span>
+                <a href="/yapping">yapping</a>
+            </nav>
+        </header>
+
+        <main class="markdown-content">
+            {{ markdown_content }}
+        </main>
+    </div>
+
+    <script src="static/grid.js"></script>
+</body>
+</html>
